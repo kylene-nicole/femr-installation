@@ -13,6 +13,13 @@ fEMR is a fast EMR solution for remote clinics who depend on speed and ease of u
 2. [JIRA](https://teamfemr.atlassian.net/jira/projects)
 3. [Team fEMR](https://teamfemr.org/)
 
+### Running the application using Docker
+1. Make sure you have Docker installed and running on your machine.
+2. Clone the femr repo and checkout the super-femr branch.
+3. Cd into the super-femr directory: `cd super-femr/`.
+4. Run `docker-compose up` to start the app.
+5. If step 4 successfully finishes, the app will be available at http://localhost:9000/
+
 ## Installation Instructions
 
 ### Prepare Your System: Install Software and Dependencies
