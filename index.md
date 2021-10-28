@@ -31,13 +31,13 @@ fEMR is a fast EMR solution for remote clinics who depend on speed and ease of u
 1. Open the MySQL Workbench.
 2. Select the db icon to create a new schema and call it `femr_db`.
 
-{% include image.html file="public/images/mysqlworkbench1.png" %}
+{% include image.html file="images/mysqlworkbench1.png" %}
 
 <details> <summary> screenshot </summary>
 
-{% include image.html file="public/images/mysqlworkbench1.png" %}
+{% include image.html file="images/mysqlworkbench1.png" %}
 
-![Image](public/images/mysqlworkbench1.png)
+![Image](images/mysqlworkbench1.png)
 
 </details>
 
@@ -46,7 +46,7 @@ fEMR is a fast EMR solution for remote clinics who depend on speed and ease of u
 
 <details> <summary> screenshot </summary>
 
-![Image](public/images/mysqlworkbench2.png)
+![Image](images/mysqlworkbench2.png)
 
 </details>
 
@@ -54,9 +54,9 @@ fEMR is a fast EMR solution for remote clinics who depend on speed and ease of u
 
 <details> <summary> screenshot </summary>
 
-![Image](public/images/mysqlworkbench3.png)
+![Image](images/mysqlworkbench3.png)
 
-![Image](public/images/mysqlworkbench4.png)
+![Image](images/mysqlworkbench4.png)
 
 </details>
 
@@ -64,7 +64,7 @@ fEMR is a fast EMR solution for remote clinics who depend on speed and ease of u
 
 <details> <summary> screenshot </summary>
 
-![Image](public/images/mysqlworkbench5.png)
+![Image](images/mysqlworkbench5.png)
 
 </details>
 

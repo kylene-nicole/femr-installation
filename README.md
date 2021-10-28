@@ -33,7 +33,7 @@ fEMR is a fast EMR solution for remote clinics who depend on speed and ease of u
 
 <details> <summary> screenshot </summary>
 
-![Image](public/images/mysqlworkbench1.png)
+![Image](images/mysqlworkbench1.png)
 
 </details>
 
@@ -42,7 +42,7 @@ fEMR is a fast EMR solution for remote clinics who depend on speed and ease of u
 
 <details> <summary> screenshot </summary>
 
-![Image](public/images/mysqlworkbench2.png)
+![Image](images/mysqlworkbench2.png)
 
 </details>
 
@@ -50,9 +50,9 @@ fEMR is a fast EMR solution for remote clinics who depend on speed and ease of u
 
 <details> <summary> screenshot </summary>
 
-![Image](public/images/mysqlworkbench3.png)
+![Image](images/mysqlworkbench3.png)
 
-![Image](public/images/mysqlworkbench4.png)
+![Image](images/mysqlworkbench4.png)
 
 </details>
 
@@ -60,7 +60,7 @@ fEMR is a fast EMR solution for remote clinics who depend on speed and ease of u
 
 <details> <summary> screenshot </summary>
 
-![Image](public/images/mysqlworkbench5.png)
+![Image](images/mysqlworkbench5.png)
 
 </details>
 
