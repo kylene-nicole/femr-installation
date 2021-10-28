@@ -32,41 +32,27 @@ fEMR is a fast EMR solution for remote clinics who depend on speed and ease of u
 2. Select the db icon to create a new schema and call it `femr_db`.
 
 ![image tooltip here](/images/mysqlworkbench1.png)
-
-
-<details> <summary> screenshot </summary>
-
-
 ![Image](images/mysqlworkbench1.png)
 
-</details>
 
 3. Under the Administration tab, select `User and Priviliges`. Then `Add account` and add `Login name` and `Password` of your preference. Save the login and password because you will need it in the later steps. 
      - For this example, I used `testing` for the username and `password` for the  password. 
 
-<details> <summary> screenshot </summary>
-
 ![Image](images/mysqlworkbench2.png)
 
-</details>
 
 4. Then go to the `Schema Privileges` tab, select `Add Entry...` for the user you created in the previous step, and select the `femr_db` schema.
 
-<details> <summary> screenshot </summary>
 
 ![Image](images/mysqlworkbench3.png)
 
 ![Image](images/mysqlworkbench4.png)
 
-</details>
 
 5. Give all of the rights, except the `GRANT OPTION`. 
 
-<details> <summary> screenshot </summary>
 
 ![Image](images/mysqlworkbench5.png)
-
-</details>
 
 ### Step 4: IntelliJ IDEA Ultimate
 1. In IntelliJ IDEA Ultimate and go to `Preferences` -> `Plugins` -> click `Marketplace` -> Then download `Scala` and `Play Framework`. Then restart the IDE.
