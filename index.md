@@ -33,6 +33,8 @@ fEMR is a fast EMR solution for remote clinics who depend on speed and ease of u
 
 <details> <summary> screenshot </summary>
 
+{% include image.html file="public/images/mysqlworkbench1.png" %}
+
 ![Image](public/images/mysqlworkbench1.png)
 
 </details>
