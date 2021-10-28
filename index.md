@@ -1,10 +1,5 @@
 # fEMR - Fast Electronic Medical Records
 
-### Attention Developers - Need to update the instructions?
-You can use the [editor on GitHub](https://github.com/kylene-phillips/femr-installation/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
 ## Description
 fEMR is a fast EMR solution for remote clinics who depend on speed and ease of use rather than complex features. Check out [Team fEMR's website](https://teamfemr.org/) for more information and a live demo.
 
@@ -14,18 +9,29 @@ fEMR is a fast EMR solution for remote clinics who depend on speed and ease of u
 3. [Team fEMR](https://teamfemr.org/)
 
 ## Running the application using Docker
-1. Make sure you have Docker installed and running on your machine.
+1. Make sure you have [Docker](https://docs.docker.com/get-docker/) installed and running on your machine.
 2. Clone the [FEMR/femr](https://github.com/FEMR/femr) repo and checkout the [super-femr](https://github.com/FEMR/femr/tree/super-femr) branch.
 3. Cd into the super-femr directory: `cd super-femr`
 4. Run `docker-compose up` to start the app.
 5. If step 4 successfully finishes, the app will be available at http://localhost:9000/
 
-## Installation Instructions
+## Setting up the project with IntelliJ
 
-### Prepare Your System: Install Software and Dependencies
-- [IntelliJ IDEA Ultimate](https://www.jetbrains.com/idea/download/#section=mac)
+### Step 1: Download and Install the following Software and Dependencies 
+- [IntelliJ IDEA Ultimate](https://www.jetbrains.com/idea/download/)
 - [MySQL Server](https://dev.mysql.com/downloads/mysql/)
 - [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
+- [Java JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+- [Git](http://git-scm.com/)
+
+### Step 2: Clone the repo 
+- `git clone https://github.com/CPSECapstone/super-femr.git`
+
+### Step 3: Setting up the DB 
+1. Open the MySQL Workbench 
+2. 
+
+
 
 (hi Bat! I am roughly listing the order of operations I took so you can put the links + make it pretty :))
 Play Framework
