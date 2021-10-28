@@ -16,12 +16,35 @@ fEMR is a fast EMR solution for remote clinics who depend on speed and ease of u
 ## Installation Instructions
 
 ### Prepare Your System: Install Software and Dependencies
-- IntelliJ IDEA Ultimate
-- MySQL Server
-- MySQL Workbench
+- [IntelliJ IDEA Ultimate](https://www.jetbrains.com/idea/download/#section=mac)
+- [MySQL Server](https://dev.mysql.com/downloads/mysql/)
+- [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
 
+(hi Bat! I am roughly listing the order of operations I took so you can put the links + make it pretty :))
+Play Framework
+Scala
+Restart InteliJ IDEA
 
+Clone the repo, make a project
+configure the perferences with play and scala
+1.8 jdk language level to 8
 
+Edit the conf
+
+...
+### Edit application.dev.conf 
+```
+include "application.conf"
+settings.researchOnly=0
+db.default.url="jdbc:mysql://127.0.0.1:3306/femr_db?characterEncoding=UTF-8"
+db.default.username="testing"
+db.default.password="password"
+photos.defaultProfilePhoto="./public/img/defaultProfile.png"
+csv.path="./Upload/CSV"
+```
+
+Setup the MySQL Server
+Setup the MySQL Workbench
 .....
 ### Markdown
 
