@@ -13,10 +13,10 @@ fEMR is a fast EMR solution for remote clinics who depend on speed and ease of u
 2. [JIRA](https://teamfemr.atlassian.net/jira/projects)
 3. [Team fEMR](https://teamfemr.org/)
 
-### Running the application using Docker
+## Running the application using Docker
 1. Make sure you have Docker installed and running on your machine.
-2. Clone the femr repo and checkout the super-femr branch.
-3. Cd into the super-femr directory: `cd super-femr/`.
+2. Clone the [FEMR/femr](https://github.com/FEMR/femr) repo and checkout the [super-femr](https://github.com/FEMR/femr/tree/super-femr) branch.
+3. Cd into the super-femr directory: `cd super-femr`
 4. Run `docker-compose up` to start the app.
 5. If step 4 successfully finishes, the app will be available at http://localhost:9000/
 
@@ -76,11 +76,3 @@ Syntax highlighted code block
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kylene-phillips/femr-installation/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
