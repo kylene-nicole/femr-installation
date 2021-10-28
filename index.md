@@ -38,7 +38,7 @@ fEMR is a fast EMR solution for remote clinics who depend on speed and ease of u
 </details>
 
 3. Under the Administration tab, select `User and Priviliges`. Then `Add account` and add `Login name` and `Password` of your preference. Save the login and password because you will need it in the later steps. 
-  - For this example, I used `testing` for the username and `password` for the  password. 
+     - For this example, I used `testing` for the username and `password` for the  password. 
 
 <details> <summary> screenshot </summary>
 
@@ -64,21 +64,12 @@ fEMR is a fast EMR solution for remote clinics who depend on speed and ease of u
 
 </details>
 
+### Step 4: IntelliJ IDEA Ultimate
+1. In IntelliJ IDEA Ultimate and go to `Preferences` -> `Plugins` -> click `Marketplace` -> Then download `Scala` and `Play Framework`. Then restart the IDE.
 
+2. Open the cloned repo, and create a new file named  `application.dev.conf` inside `super-femr/femr/conf` folder. 
+Copy the following settings inside and save it. Note that `db.default.username` and `db.default.password` values must match the account and password from the Step 3.3. For this example, my username is `testing` and password is `password`.
 
-(hi Bat! I am roughly listing the order of operations I took so you can put the links + make it pretty :))
-Play Framework
-Scala
-Restart InteliJ IDEA
-
-Clone the repo, make a project
-configure the perferences with play and scala
-1.8 jdk language level to 8
-
-Edit the conf
-
-...
-### Edit application.dev.conf 
 ```
 include "application.conf"
 settings.researchOnly=0
@@ -89,29 +80,23 @@ photos.defaultProfilePhoto="./public/img/defaultProfile.png"
 csv.path="./Upload/CSV"
 ```
 
-Setup the MySQL Server
-Setup the MySQL Workbench
-.....
-### Markdown
+### IN PROGRESS - STILL DOCUMENTING
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+3. Click “Edit Configurations” -> click on the + sign -> Play2 App (add configuration) -> Environment Variables -> add the following two environment variables: user.dir and config.file (make sure to change the value based on where the two are stored on your local machine) the config file is application.dev.conf -> then click apply and ok
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+4. Go to project structure -> Under the project tab, Under Project SDK, set to 1.8 Amazon Correto. You may have to add SDK, and choose the 1.8 JDK.
 
-- Bulleted
-- List
+5. Change the language level to 8
 
-1. Numbered
-2. List
+6. On the rightmost side of IntelliJ, if there is a vertical line containing sbt. Click on the sbt tab and then click the refresh symbol.
+      - If there isn’t sbt on the right, remove the .idea folder from the root directory of the project. In the command line, traverse to the root directory and do: rm -r .idea. Then redo step 3 and then go back to step 6 and continue
 
-**Bold** and _Italic_ and `Code` text
+7. After that runs, click on the Play button to run the configuration. If everything was set up correctly, the website should open up on another window. Select “Apply this script now”.
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Troubleshooting
+1. Try deleting the .idea folder and rerunning sbt 
+2. Confirm you have the absolute path in your environment variables
+3. Try to re-apply the plugins Scala and Play Framework
+4. Otherwise, try cloning the femr github and going through the steps once more.
+5. Try invalidating Intellij IDEA cache.
