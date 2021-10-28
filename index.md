@@ -38,8 +38,33 @@ fEMR is a fast EMR solution for remote clinics who depend on speed and ease of u
 </details>
 
 3. Under the Administration tab, select `User and Priviliges`. Then `Add account` and add `Login name` and `Password` of your preference. Save the login and password because you will need it in the later steps. 
+  - For this example, I used `testing` for the username and `password` for the  password. 
+
+<details> <summary> screenshot </summary>
 
 ![Image](public/images/mysqlworkbench2.png)
+
+</details>
+
+4. Then go to the `Schema Privileges` tab, select `Add Entry...` for the user you created in the previous step, and select the `femr_db` schema.
+
+<details> <summary> screenshot </summary>
+
+![Image](public/images/mysqlworkbench3.png)
+
+![Image](public/images/mysqlworkbench4.png)
+
+</details>
+
+5. Give all of the rights, except the `GRANT OPTION`. 
+
+<details> <summary> screenshot </summary>
+
+![Image](public/images/mysqlworkbench5.png)
+
+</details>
+
+
 
 (hi Bat! I am roughly listing the order of operations I took so you can put the links + make it pretty :))
 Play Framework
