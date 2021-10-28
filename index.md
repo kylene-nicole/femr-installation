@@ -30,28 +30,19 @@ fEMR is a fast EMR solution for remote clinics who depend on speed and ease of u
 ### Step 3: Setting up the DB 
 1. Open the MySQL Workbench.
 2. Select the db icon to create a new schema and call it `femr_db`.
-
 ![image tooltip here](/images/mysqlworkbench1.png)
 ![Image](images/mysqlworkbench1.png)
 
-
 3. Under the Administration tab, select `User and Priviliges`. Then `Add account` and add `Login name` and `Password` of your preference. Save the login and password because you will need it in the later steps. 
      - For this example, I used `testing` for the username and `password` for the  password. 
-
 ![Image](images/mysqlworkbench2.png)
 
-
 4. Then go to the `Schema Privileges` tab, select `Add Entry...` for the user you created in the previous step, and select the `femr_db` schema.
-
-
 ![Image](images/mysqlworkbench3.png)
-
 ![Image](images/mysqlworkbench4.png)
 
 
 5. Give all of the rights, except the `GRANT OPTION`. 
-
-
 ![Image](images/mysqlworkbench5.png)
 
 ### Step 4: IntelliJ IDEA Ultimate
