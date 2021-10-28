@@ -15,7 +15,7 @@ fEMR is a fast EMR solution for remote clinics who depend on speed and ease of u
 
 ## Installation Instructions
 
-## Prepare Your System: Install Software and Dependencies
+### Prepare Your System: Install Software and Dependencies
 - IntelliJ IDEA Ultimate
 - MySQL Server
 - MySQL Workbench
