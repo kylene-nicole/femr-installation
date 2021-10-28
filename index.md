@@ -31,7 +31,7 @@ fEMR is a fast EMR solution for remote clinics who depend on speed and ease of u
 1. Open the MySQL Workbench.
 2. Select the db icon to create a new schema and call it `femr_db`.
 
-![image tooltip here](/images/assets/mysqlworkbench1.png)
+![image tooltip here](/images/mysqlworkbench1.png)
 
 
 <details> <summary> screenshot </summary>
