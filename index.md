@@ -37,7 +37,9 @@ fEMR is a fast EMR solution for remote clinics who depend on speed and ease of u
 
 </details>
 
+3. Under the Administration tab, select `User and Priviliges`. Then `Add account` and add `Login name` and `Password` of your preference. Save the login and password because you will need it in the later steps. 
 
+![Image](public/images/mysqlworkbench2.png)
 
 (hi Bat! I am roughly listing the order of operations I took so you can put the links + make it pretty :))
 Play Framework
