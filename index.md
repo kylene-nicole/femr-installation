@@ -1,10 +1,28 @@
-## fEMR - Fast Electronic Medical Records
+# fEMR - Fast Electronic Medical Records
 
-### Need to update the instructions?
+### Attention Developers - Need to update the instructions?
 You can use the [editor on GitHub](https://github.com/kylene-phillips/femr-installation/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+## Description
+fEMR is a fast EMR solution for remote clinics who depend on speed and ease of use rather than complex features. Check out [Team fEMR's website](https://teamfemr.org/) for more information and a live demo.
+
+### Join our development community
+1. Slack (will be updated soon!)
+2. [JIRA](https://teamfemr.atlassian.net/jira/projects)
+3. [Team fEMR](https://teamfemr.org/)
+
+## Installation Instructions
+
+## Prepare Your System: Install Software and Dependencies
+- IntelliJ IDEA Ultimate
+- MySQL Server
+- MySQL Workbench
+
+
+
+.....
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
