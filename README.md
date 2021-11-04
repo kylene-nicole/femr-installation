@@ -65,10 +65,13 @@ fEMR is a fast EMR solution for remote clinics who depend on speed and ease of u
 </details>
 
 ### Step 4: IntelliJ IDEA Ultimate
-1. In IntelliJ IDEA Ultimate and go to `Preferences` -> `Plugins` -> click `Marketplace` -> Then download `Scala` and `Play Framework`. Then restart the IDE.
 
-2. Open the cloned repo, and create a new file named  `application.dev.conf` inside `super-femr/femr/conf` folder. 
-Copy the following settings inside and save it. Note that `db.default.username` and `db.default.password` values must match the account and password from the Step 3.3. For this example, my username is `testing` and password is `password`.
+1. Open IntelliJ IDEA Ultimate. Then open the `super-femr` repo from step 2.
+
+2. In IntelliJ IDEA Ultimate and go to `Preferences` -> `Plugins` -> click `Marketplace` -> Then download `Scala` and `Play Framework`. Then restart the IDE.
+
+3. Inside `super-femr/conf` folder, create a new file named  `application.dev.conf`. 
+4. Copy the following settings inside and save it. Note that `db.default.username` and `db.default.password` values must match the account and password from the Step 3.3. For this example, my username is `testing` and password is `password`.
 
 ```
 include "application.conf"
@@ -80,19 +83,21 @@ photos.defaultProfilePhoto="./public/img/defaultProfile.png"
 csv.path="./Upload/CSV"
 ```
 
-### IN PROGRESS - STILL DOCUMENTING
+5. Go to `Run` -> `Edit Configurations` -> click on the `+` sign -> `Play 2 App`.
+6. Then, click on `Edit Environment Variables` -> add the following two environment variables: `user.dir` and `config.file` (make sure to change the value based on where the two are stored on your local machine). Then click apply and ok.
+    - `config.file` is the path for application.dev.conf.
+    - `user.dir` is the path for the project.
 
-3. Click “Edit Configurations” -> click on the + sign -> Play2 App (add configuration) -> Environment Variables -> add the following two environment variables: user.dir and config.file (make sure to change the value based on where the two are stored on your local machine) the config file is application.dev.conf -> then click apply and ok
 
+7. Go to `File` -> `Project structure` -> Under the `Project` tab -> Select `Project SDK` and set it to 1.8. 
+    - You can download 1.8 directly from IntelliJ. If so, choose 1.8 Amazon Correto.
 
-4. Go to project structure -> Under the project tab, Under Project SDK, set to 1.8 Amazon Correto. You may have to add SDK, and choose the 1.8 JDK.
+8. Change the language level to 8.
 
-5. Change the language level to 8
+9. On the rightmost side of IntelliJ, if there is a vertical line containing sbt. Click on the sbt tab and then click the refresh symbol.
+      - If there isn’t sbt on the right, remove the .idea folder from the root directory of the project. In the command line, traverse to the root directory and do: rm -r .idea. Then redo step 2 and then continue. If still does not work try removing the project and recloning it again. 
 
-6. On the rightmost side of IntelliJ, if there is a vertical line containing sbt. Click on the sbt tab and then click the refresh symbol.
-      - If there isn’t sbt on the right, remove the .idea folder from the root directory of the project. In the command line, traverse to the root directory and do: rm -r .idea. Then redo step 3 and then go back to step 6 and continue
-
-7. After that runs, click on the Play button to run the configuration. If everything was set up correctly, the website should open up on another window. Select “Apply this script now”.
+10. After that runs, click on the Play button to run the configuration. If everything was set up correctly, the website should open up on another window. Select “Apply this script now”.
 
 ### Troubleshooting
 1. Try deleting the .idea folder and rerunning sbt 
