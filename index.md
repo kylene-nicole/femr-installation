@@ -3,11 +3,6 @@
 ## Description
 fEMR is a fast EMR solution for remote clinics who depend on speed and ease of use rather than complex features. Check out [Team fEMR's website](https://teamfemr.org/) for more information and a live demo.
 
-### Join our development community
-1. Slack (will be updated soon!)
-2. [JIRA](https://teamfemr.atlassian.net/jira/projects)
-3. [Team fEMR](https://teamfemr.org/)
-
 ## Running the application using Docker
 1. Make sure you have [Docker](https://docs.docker.com/get-docker/) installed and running on your machine.
 2. Clone the [FEMR/femr](https://github.com/FEMR/femr) repo and checkout the [super-femr](https://github.com/FEMR/femr/tree/super-femr) branch.
@@ -65,32 +60,23 @@ csv.path="./Upload/CSV"
 ```
 
 5. Go to `Run` -> `Edit Configurations` -> click on the `+` sign -> `Play 2 App`.
-
 ![Image](images/intellij5.png)
 
 6. Then, click on `Edit Environment Variables` -> add the following two environment variables: `user.dir` and `config.file` (make sure to change the value based on where the two are stored on your local machine). Then click apply and ok.
     - `config.file` is the path for application.dev.conf.
     - `user.dir` is the path for the project.
-
 ![Image](images/intellij6.png)
 
 7. Go to `File` -> `Project structure` -> Under the `Project` tab -> Select `Project SDK` and set it to 1.8. 
-    - You can download 1.8 directly from IntelliJ. If so, choose 1.8 Amazon Correto.
+    - You can download 1.8 directly from IntelliJ. If so, choose 1.8 Amazon Correto. ![Image](images/intellij7.png)
 
-![Image](images/intellij7.png)
-
-8. Change the language level to 8.
-
-![Image](images/intellij8.png)
+8. Change the language level to 8.![Image](images/intellij8.png)
 
 9. On the rightmost side of IntelliJ, if there is a vertical line containing sbt. Click on the sbt tab and then click the refresh symbol.
       - If there isn’t sbt on the right, remove the .idea folder from the root directory of the project. In the command line, traverse to the root directory and do: rm -r .idea. Then redo step 2 and then continue. If still does not work try removing the project and recloning it again. 
-
 ![Image](images/intellij9.png)
 
-10. After that runs, click on the Play button to run the configuration. If everything was set up correctly, the website should open up on another window. Select “Apply this script now”.
-
-![Image](images/intellij10.png)
+10. After that runs, click on the Play button to run the configuration. If everything was set up correctly, the website should open up on another window. Select “Apply this script now”. ![Image](images/intellij10.png)
 
 
 ### Troubleshooting
