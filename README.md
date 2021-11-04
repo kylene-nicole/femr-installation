@@ -84,20 +84,57 @@ csv.path="./Upload/CSV"
 ```
 
 5. Go to `Run` -> `Edit Configurations` -> click on the `+` sign -> `Play 2 App`.
+
+<details> <summary> screenshot </summary>
+
+![Image](images/intellij5.png)
+
+</details>
+
 6. Then, click on `Edit Environment Variables` -> add the following two environment variables: `user.dir` and `config.file` (make sure to change the value based on where the two are stored on your local machine). Then click apply and ok.
     - `config.file` is the path for application.dev.conf.
     - `user.dir` is the path for the project.
+
+<details> <summary> screenshot </summary>
+
+![Image](images/intellij6.png)
+
+</details>
 
 
 7. Go to `File` -> `Project structure` -> Under the `Project` tab -> Select `Project SDK` and set it to 1.8. 
     - You can download 1.8 directly from IntelliJ. If so, choose 1.8 Amazon Correto.
 
+<details> <summary> screenshot </summary>
+
+![Image](images/intellij7.png)
+
+</details>
+
 8. Change the language level to 8.
+
+<details> <summary> screenshot </summary>
+
+![Image](images/intellij8.png)
+
+</details>
 
 9. On the rightmost side of IntelliJ, if there is a vertical line containing sbt. Click on the sbt tab and then click the refresh symbol.
       - If there isn’t sbt on the right, remove the .idea folder from the root directory of the project. In the command line, traverse to the root directory and do: rm -r .idea. Then redo step 2 and then continue. If still does not work try removing the project and recloning it again. 
 
+<details> <summary> screenshot </summary>
+
+![Image](images/intellij9.png)
+
+</details>
+
 10. After that runs, click on the Play button to run the configuration. If everything was set up correctly, the website should open up on another window. Select “Apply this script now”.
+
+<details> <summary> screenshot </summary>
+
+![Image](images/intellij10.png)
+
+</details>
 
 ### Troubleshooting
 1. Try deleting the .idea folder and rerunning sbt 
